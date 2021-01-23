@@ -1,3 +1,9 @@
+__all__ = (
+    'run_N_times',
+    'hello'
+)
+
+
 def run_N_times(times):
     def decorator(func):
         def wrapper(*args, **kwargs):
@@ -13,4 +19,5 @@ def hello(username):
     print(f'Hello, {username}!')
 
 
-hello('caiman')
+if __name__ == '__main__':
+    hello('caiman')

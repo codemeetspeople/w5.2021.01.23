@@ -11,11 +11,12 @@ def my_range(start, end=None, step=None):
         start += step
 
 
-for i in my_range(4):
-    print(i)
+if __name__ == '__main__':
+    for i in my_range(4):
+        print(i)
 
-for i in my_range(2, 5):
-    print(i)
+    for i in my_range(2, 5):
+        print(i)
 
-# for i in my_range(1, 7, 2):
-#     print(i)
+    # for i in my_range(1, 7, 2):
+    #     print(i)
