@@ -6,7 +6,12 @@ print('Hello, %(username)s!' % {'username': 'caiman'})
 print('Hello, {}'.format('caiman'))
 print('{} + {} = {}'.format(2, 2, 2+2))
 print('{0} + {0} = {1}'.format(2, 2+2))
-print('{male} + {female} = love'.format(male='John', female='Jane'))
+print(
+    '{male} + {female} = love'.format(
+        male='John',
+        female='Jane'
+    )
+)
 
 
 params = {'male': 'Jack', 'female': 'Jane'}
