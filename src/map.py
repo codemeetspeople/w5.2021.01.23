@@ -9,13 +9,20 @@ lst = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 #     return x ** 2
 
 
-# def wrapper(func, sequence):
-#     result = []
+def wrapper(func, sequence):
+    result = []
 
-#     for elem in sequence:
-#         result.append(func(elem))
+    for elem in sequence:
+        result.append(func(elem))
 
-#     return result
+    return result
+
+
+def wrapper2(func, sequence):
+    for index in range(len(sequence)):
+        sequence[index] = func(sequence[index])
+
+    return sequence
 
 
 # print(lst)
